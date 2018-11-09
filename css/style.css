@@ -1,0 +1,89 @@
+/*  Global styles
+==================*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*  Media Quierys
+==================*/
+/* Custom */
+@media only screen and (min-width : 320px) {
+    /* Navbar */
+    nav{
+        display: block;
+        position: relative;
+    }
+    #navBtn {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        font-size: 2em;
+        border: none;
+        background-color: #cc241f;
+        text-align: left;
+    }
+    #navBtn:hover {
+        cursor: pointer;
+        outline: none;
+        background-color: red;
+    }
+    .humborger {
+        width: 40px;
+        height: 17px;
+        position: absolute;
+        top: calc(50% - 9px);
+        right: 7px;
+        background-color: rgba(255, 255, 255, 0.575);
+        box-shadow: 0 0 1px 3px rgba(90, 89, 89, 0.1);
+        border-radius: 3px;
+    }
+    .humborger .dash {
+        width: 90%;
+        height: 2px;
+        display: block;
+        background-color: rgb(46, 44, 44);
+        margin: 3px auto;
+    }
+    #navList {
+        display: block;
+        list-style: none;
+        text-transform: capitalize;
+        height: 0;
+        overflow: hidden;
+    }
+    #navList li {
+        display: block;
+        text-align: center;
+        background-color: #cc241f;
+        padding: 7px 5px;
+        font-size: 18px;
+        border-bottom: 1px solid #111;
+        color: #fff;
+    }
+    #navList li:hover {
+        background-color: red;
+        cursor: pointer;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
