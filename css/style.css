@@ -5,67 +5,57 @@
     margin: 0;
 }
 
+.wraper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/*  Page Styles
+==================*/
+/* Navbar */
+nav {
+    background-color:  #4284f3;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: relative;
+    z-index: 999;
+    color: #efefef;
+}
+.wraper {
+    display: flex;
+    flex-direction: row;
+}
+nav .links li {
+    flex: 1;
+    list-style-type: none;
+    padding: 18px 0;
+    text-align: center;
+}
+nav .links li a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav .links .logo {
+    flex: 2;
+    padding: 0;
+    position: relative;
+}
+nav .links .logo img {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+}
 /*  Media Quierys
 ==================*/
 /* Custom */
 @media only screen and (min-width : 320px) {
-    /* Navbar */
-    nav{
-        display: block;
-        position: relative;
-    }
-    #navBtn {
-        display: block;
-        position: relative;
-        width: 100%;
-        padding: 10px;
-        font-size: 2em;
-        border: none;
-        background-color: #cc241f;
-        text-align: left;
-    }
-    #navBtn:hover {
-        cursor: pointer;
-        outline: none;
-        background-color: red;
-    }
-    .humborger {
-        width: 40px;
-        height: 17px;
-        position: absolute;
-        top: calc(50% - 9px);
-        right: 7px;
-        background-color: rgba(255, 255, 255, 0.575);
-        box-shadow: 0 0 1px 3px rgba(90, 89, 89, 0.1);
-        border-radius: 3px;
-    }
-    .humborger .dash {
-        width: 90%;
-        height: 2px;
-        display: block;
-        background-color: rgb(46, 44, 44);
-        margin: 3px auto;
-    }
-    #navList {
-        display: block;
-        list-style: none;
-        text-transform: capitalize;
-        height: 0;
-        overflow: hidden;
-    }
-    #navList li {
-        display: block;
-        text-align: center;
-        background-color: #cc241f;
-        padding: 7px 5px;
-        font-size: 18px;
-        border-bottom: 1px solid #111;
-        color: #fff;
-    }
-    #navList li:hover {
-        background-color: red;
-        cursor: pointer;
-    }
+
 }
 
 /* Extra Small Devices, Phones */
