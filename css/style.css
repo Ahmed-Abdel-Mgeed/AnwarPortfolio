@@ -16,20 +16,11 @@
     flex-direction: row;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-.section-block {
-    width: 100%;
-    height: 100vh;
-}
 
 .section-info {
     text-align: center;
     color: inherit;
-    padding: 20vh 0 0;
+    padding: 10vh 0 0;
 }
 
 .section-info .section-h {
@@ -100,6 +91,7 @@ nav .links .logo {
     flex: 2;
     padding: 0;
     position: relative;
+
 }
 nav .links .logo:hover {
     background-color: transparent;
@@ -108,6 +100,8 @@ nav .links .logo img {
     position: absolute;
     right: 0;
     left: 0;
+    margin: 0 auto;
+    width: 170px;
 }
 
 /* Home
@@ -213,6 +207,82 @@ nav .links .logo img {
     flex: 2;
     padding: 20px 0 0;
 }
+
+
+/* Resume
+==========*/
+.resume {
+    background-color: #4284f3;
+    color: #fff;
+}
+
+.resume-table{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color:#333;
+}
+
+.table-cell-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+}
+
+.resume-table .table-cell {
+    background: #f1f1f1;
+    margin: 10px;
+    padding:7px;
+    border-radius: 6px;
+}
+
+.exp .exp-cell,
+.edu>div {
+    padding: 6px;
+}
+
+.cell-info {
+    float: right;
+    text-align: right;
+    background: #fabb05;
+    color: #f1f1f1;
+    padding: 11px;
+    font-size: 14px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.23);
+}
+
+.description {
+    color: #4284f3
+}
+
+.skills-container {
+    margin: 16px 10px 10px;
+}
+
+.skills span {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: #fabb05;
+    color: #f1f1f1;
+}
+
+.card {
+    text-align: center;
+}
+
+.card p {
+    padding: 3px;
+    background-color: #fabb05;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: -5px;
+}
+
+.achiv img {
+    width: 320px;
+}
+
 /* Custom */
 @media only screen and (min-width : 320px) {
 
@@ -235,5 +305,13 @@ nav .links .logo img {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    .container {
+    width: 1170px;
+    margin: auto;
+}
 
+    .section-block {
+    width: 100%;
+    height: 100vh;
+    }
 }
